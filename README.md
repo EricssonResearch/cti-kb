@@ -1,7 +1,7 @@
 
-# Cyber Threat Intelligence Knowledge Base Aligned with MITRE ATT&CK Framework
+# Cyber Threat Intelligence Knowledge Base Aligned with MITRE ATT&CK® Framework
 
-We built a CTI KB using MITRE ATT&CK v12. The CTI KB encompasses an extensive array of cyber threat tactics, techniques, and procedures (TTPs), aimed at bolstering research and practical applications in cybersecurity. We extracted all the MITRE ATT&CK techniques and generated a graph database hosted on [Neo4j graph database management system][neo]. We used the open-source JSON file from the [MITRE CTI][mitrecti] and parsed all nodes (attack-pattern, campaign, intrusion-set, tools, etc.) and their relationships into a graph database.
+We built a CTI KB using MITRE ATT&CK® v12. The CTI KB encompasses an extensive array of cyber threat tactics, techniques, and procedures (TTPs), aimed at bolstering research and practical applications in cybersecurity. We extracted all the MITRE ATT&CK® techniques and generated a graph database hosted on [Neo4j graph database management system][neo]. We used the open-source JSON file from the [MITRE CTI][mitrecti] and parsed all nodes (attack-pattern, campaign, intrusion-set, tools, etc.) and their relationships into a graph database.
 
 The CTI database contains up to 2060 nodes, 27411 relationships, and 366 APTs conducted using up to 861 unique techniques.
 
