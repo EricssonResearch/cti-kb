@@ -42,20 +42,6 @@ The CTI database contains up to 2060 nodes, 27411 relationships, and 366 APTs co
         `apoc.import.file.user_neo4j_config=false`
 
         `cypher.lenient_create_relationship=true`
-
-    + Configure Database Settings File
-
-        Choose: `Your database -> ... (Three Dots) -> Settings`
-
-        Go to last line and set the commands below
-
-        `apoc.export.file.enabled=true`
-
-        `apoc.import.file.enabled=true`
-
-        `apoc.import.file.user_neo4j_config=false`
-
-        `cypher.lenient_create_relationship=true`
       
     + Configure Memory Usage
 
