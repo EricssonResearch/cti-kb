@@ -96,9 +96,24 @@ If you are interested in our work, please consider citing the following research
 ```bibtex
 @inproceedings{nour2023accurify,
   title     =  {{Accurify: Automated New Testflows Generation for Attack Variants in Threat Hunting}},
-  author    =  {Boubakr Nour and Makan Pourzandi and Rushaan Kamran Qureshi and Mourad Debbabi},
+  author    =  {B. Nour and M. Pourzandi and R. K. Qureshi and M. Debbabi},
   booktitle =  {Foundations and Practice of Security (FPS)},
+  month     =  {Dec},
+  address   =  {Bordeaux, France},
+  publisher = {Springer},
+  doi       =  {10.1007/978-3-031-57540-2_5},
   year      =  {2023}
+}
+```
+
+```bibtex
+@article{nour2024automa,
+  title     = {{Automa: Automated Generation of Attack Hypotheses and Their Variants for Threat Hunting using Knowledge Discovery}},
+  author    = {B. Nour and M. Pourzandi and RK. Qureshi and M. Debbabi},
+  journal   = {IEEE Transactions on Network and Service Management},
+  doi       = {10.1109/TNSM.2024.3378972},
+  year      = {2024},
+  publisher = {IEEE}
 }
 ```
 
