@@ -2,9 +2,8 @@
 
 import argparse
 import json
-import re
 import sys
-from py2neo import Graph, Node, Relationship, NodeMatcher, cypher
+from py2neo import Graph, Node, Relationship, NodeMatcher
 
 
 # BUILD_LABEL
