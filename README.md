@@ -57,15 +57,18 @@ The CTI database contains up to 2060 nodes, 27411 relationships, and 366 APTs co
 
 4. Download the MITRE Entreprise ATT&CK database in JSON format
 
-    `wget https://github.com/mitre/cti/blob/master/enterprise-attack/enterprise-attack.json`
+    `wget https://github.com/mitre/cti/raw/master/enterprise-attack/enterprise-attack.json`
 
 
-5. Configure the main.py script
-
-    ```python
-    100. # open graph connection`
-    101. graph_bolt = "bolt://127.0.0.1:7687"
-    102. graph_auth = ("neo4j","1234")
+5. Configure script with .env file
+    ```bash
+    cp .env.example .env
+    ```
+    ```env
+    # Change values according to created database 
+    NEO4J_URL=bolt://127.0.0.1:7687
+    NEO4J_USERNAME=neo4j
+    NEO4J_PASSWORD=1234
     ```
 
 6. Run the script
