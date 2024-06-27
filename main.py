@@ -41,7 +41,14 @@ def build_objects(obj, key):
         props["modified"] = obj["modified"]
     if obj.get("x_mitre_version"):
         props["version"] = obj["x_mitre_version"]
-
+    props["external_id"] = next(
+        filter(
+            lambda s: s.get("source_name", "") == "mitre-attack"
+            and s.get("external_id", None),
+            obj.get("external_references", []),
+        ),
+        {"external_id": None},
+    )["external_id"]
     # Create node for the group
     node_main = Node(label, **props)
     # Merge node to graph
