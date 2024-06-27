@@ -41,6 +41,8 @@ def build_objects(obj, key):
         props["modified"] = obj["modified"]
     if obj.get("x_mitre_version"):
         props["version"] = obj["x_mitre_version"]
+    if obj.get("x_mitre_deprecated"):
+        props["deprecated"] = obj["x_mitre_deprecated"]
     props["external_id"] = next(
         filter(
             lambda s: s.get("source_name", "") == "mitre-attack"
