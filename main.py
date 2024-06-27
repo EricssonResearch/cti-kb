@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
 import argparse
+from os import getenv
+from dotenv import load_dotenv
+
 import json
 import sys
 from py2neo import Graph, Node, Relationship, NodeMatcher
@@ -151,8 +154,10 @@ except Exception as e:
     sys.exit(1)
 
 # Open graph connection
-graph_bolt = "bolt://127.0.0.1:7687"
-graph_auth = ("neo4j", "12345678")
+load_dotenv()
+
+graph_bolt = getenv("NEO4J_URL")
+graph_auth = (getenv("NEO4J_USERNAME"), getenv("NEO4J_PASSWORD"))
 
 graph = Graph(graph_bolt, auth=graph_auth)
 

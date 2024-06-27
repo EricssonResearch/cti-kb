@@ -10,3 +10,4 @@ pytz
 six
 urllib3
 wcwidth
+python-dotenv
